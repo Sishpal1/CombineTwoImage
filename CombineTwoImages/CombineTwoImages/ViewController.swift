@@ -15,6 +15,7 @@ class ViewController: UIViewController {
         originalImageView.image = combineTwoImagesIntoOne(firstImage: UIImage(named: "1")!, secondImage: UIImage(named: "2")!)
     }
     
+    //Merge the two images side by side
     func combineTwoImagesIntoOne(firstImage : UIImage, secondImage : UIImage) -> UIImage {
         let size = CGSize(width: firstImage.size.width, height: firstImage.size.height)
         UIGraphicsBeginImageContext(size)
